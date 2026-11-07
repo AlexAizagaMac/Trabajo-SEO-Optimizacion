@@ -1,0 +1,23 @@
+<Header>
+<aside> Indice por texto con hipervinculos
+
+<h1> Titulo de la página
+<p> Descripción de la página
+
+<h2> Como la música crea ambiente
+<p> Explicación
+
+<h2> Juegos a tratar
+<img> Índice de los juego a tratar
+
+repetir por cada juego [
+<h3> Titulo del juego
+<p> Descripción del juego, ambiente y música
+<img> Imagen del juego de nuevo
+<audio> Music Track
+]
+
+<h2> Conclusión
+<p> Nuestra conclusión
+
+<Footer>

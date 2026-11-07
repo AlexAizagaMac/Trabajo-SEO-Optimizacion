@@ -21,6 +21,24 @@ a {
     transition: all 0.3s ease;
 }
 
+.AudioTrack{
+    margin: 1.5rem;
+}
+
+.bold{
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+.card-text
+{
+    padding: 1.5rem;
+}
+.audio-card h3
+{
+    font-size: 24px;
+}
+
 /* ==========================================================================
    2. CABECERA (HEADER)
    ========================================================================== */
@@ -41,6 +59,7 @@ a {
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 2px;
+    font-style: italic;
 }
 
 .logo span:first-child { color: #ffffff; }
@@ -272,5 +291,9 @@ a {
     
     .nav-menu a {
         margin: 0 0.5rem;
+    }
+
+    .card-text img{
+        display: none;
     }
 }

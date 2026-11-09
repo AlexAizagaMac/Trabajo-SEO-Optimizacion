@@ -36,12 +36,13 @@ a {
 {
     padding: 1.5rem;
 }
+
 .audio-card h2
 {
     font-size: 24px;
 }
 
-.hidden img
+.hidden-img
 {
     display: none;
 }
@@ -55,7 +56,7 @@ a {
 .game-index
 {
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: repeat(5,0.2fr);
     margin: 2.3rem;
 }
 
@@ -336,6 +337,27 @@ a {
 /* ==========================================================================
    7. ADAPTACIÓN A MÓVILES (RESPONSIVE)
    ========================================================================== */
+@media (max-width: 1200px) {
+    
+    .normal-img {
+        display: none;
+    }
+
+    .hidden-img{
+        display: block;
+    }
+    .game-index
+    {
+        grid-template-columns: repeat(3,0.33fr);
+    }
+}
+@media (max-width: 900px) {
+    .game-index
+    {
+        grid-template-columns: repeat(2,0.5fr);
+    }
+}
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -353,15 +375,5 @@ a {
     
     .nav-menu a {
         margin: 0 0.5rem;
-    }
-}
-@media (max-width: 1200px) {
-    
-    .card-text img {
-        display: none;
-    }
-
-    .hidden img{
-        display: block;
     }
 }

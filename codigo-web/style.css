@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    --index-img-size:50%;
+    --border-color: #e2e8f0;
 }
 
 body {
@@ -46,30 +46,59 @@ a {
     display: none;
 }
 
-.boton-index
-{
-    text-align: center;
-    width: 0.2fr;
-    padding: 0.5rem;
-}
-
-.boton-index h3
-{
-    font-size: 12px;
-    color: #9ca3af;
-}
-
-.boton-index img
-{
-    border-radius: 12px;
-    width: 100%;
-}
-
-.game-index
+.game-index-header
 {
     font-size: 24px;
     text-align: center;
 }
+
+.game-index
+{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    margin: 2.3rem;
+}
+
+.game-element
+{
+    font-size: 12px;
+    color: #9ca3af;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.game-element img
+{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.game-element:hover img
+{
+    transform: scale(1.05);
+    border: 2px solid var(--border-color);
+}
+
+.primer-bloque
+{
+    background: linear-gradient(135deg, #1e1b4b 0%, #111827 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 1px solid #312e81;
+}
+
+.primer-bloque h1, h2
+{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.primer-bloque h1 {font-size: 2.3rem;}
+.primer-bloque h2 {font-size: 1.8rem;}
 
 /* ==========================================================================
    2. CABECERA (HEADER)

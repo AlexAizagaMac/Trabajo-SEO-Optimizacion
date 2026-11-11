@@ -135,6 +135,7 @@ video
 {
     background-color: var(--bg-color-dark); /* For browsers that do not support gradients */
     background-image: linear-gradient(to top, var(--card-bg-color), var(--card-bg-color-dark) 50%);
+    color: var(--paragraph-color);
     border: 1px solid var(--border-color-dark);
     border-radius: 12px;
     padding: 1.5rem;
@@ -143,6 +144,10 @@ video
     justify-content: space-between;
     transition: transform 0.3s ease, border-color 0.3s ease;
     margin: 2rem 0px;
+}
+.conclusion-card h2
+{
+    color: var(--text-color-bright);
 }
 
 .link

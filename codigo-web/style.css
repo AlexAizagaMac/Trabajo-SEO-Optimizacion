@@ -7,23 +7,32 @@
     box-sizing: border-box;
 
     --border-color: #e2e8f0;
+
     --text-color-bright: #FFF;
     --text-highlight-color-light: #FE0;
+    --text-color-dark: #000;
     --text-higlight-color-dark: #430;
+
     --link-color: #EEE;
     --link-highlight-color: #DA0;
-    --text-color-dark: #000;
+
     --bg-color: #DDD;
-    --card-bg-color: #999;
     --bg-color-dark: #555;
+    --card-bg-color: #999;
+    --card-bg-color-dark: #666;
+
     --accent-color: #FD0;
+
+    --title-font: 'Space Grotesk', sans-serif;
+    --header-font: 'Orbitron', sans-serif;
+    --text-font: 'Space Grotesk', sans-serif;
 
 }
 
 body {
     background-color: #0b0f19; /* Fondo oscuro gamer */
     color: #e2e8f0;
-    font-family: 'Space Grotesk', sans-serif; /* Texto base super moderno */
+    font-family: var(--title-font); /* Texto base super moderno */
     font-size: 15px;
     line-height: 1.6;
 }
@@ -112,6 +121,41 @@ a {
 .primer-bloque h1 {font-size: 2.3rem;}
 .primer-bloque h2 {font-size: 1.8rem;}
 
+video
+{
+    margin: 2rem;
+    width: 70%;
+    border-radius: 0.2rem;
+    align-self: center;
+}
+
+.conclusion-card
+{
+    background-color: var(--bg-color-dark); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to top, var(--card-bg-color), var(--card-bg-color-dark));
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    margin: 2rem 0px;
+}
+
+.link
+{
+    text-align: center;
+}
+.link a
+{
+    color: var(--link-color);
+}
+.link a:hover
+{
+    color: var(--link-highlight-color);
+}
+
 /* ==========================================================================
    2. CABECERA (HEADER)
    ========================================================================== */
@@ -128,15 +172,18 @@ a {
 }
 
 .logo {
-    font-family: 'Orbitron', sans-serif; /* Logotipo futurista */
+    font-family: var(--header-font); /* Logotipo futurista */
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 2px;
     font-style: italic;
+    color: var(--text-color-bright);
 }
 
-.logo span:first-child { color: #ffffff; }
-.logo span:last-child { color: #00f2fe; }
+.accent
+{
+    color: var(--accent-color);
+}
 
 /* ==========================================================================
    3. ESTRUCTURA PRINCIPAL (LAYOUT DE DOS COLUMNAS)

@@ -49,8 +49,7 @@ a {
     margin: 1.5rem;
 }
 
-.bold{
-    font-weight: bold;
+strong{
     color: var(--text-color-bright);
 }
 

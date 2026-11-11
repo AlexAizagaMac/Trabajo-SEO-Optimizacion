@@ -7,19 +7,21 @@
     box-sizing: border-box;
 
     --border-color: #e2e8f0;
+    --border-color-dark: #312e81;
 
-    --text-color-bright: #FFF;
+    --text-color-bright: #e2e8f0;
     --text-highlight-color-light: #FE0;
+    --paragraph-color: #9ca3af;
     --text-color-dark: #000;
     --text-higlight-color-dark: #430;
 
-    --link-color: #EEE;
+    --link-color: #ffffff;
     --link-highlight-color: #DA0;
 
-    --bg-color: #DDD;
-    --bg-color-dark: #555;
-    --card-bg-color: #999;
-    --card-bg-color-dark: #666;
+    --bg-color: #0b0f19;
+    --bg-color-dark: #090d16;
+    --card-bg-color: #1e1b4b;
+    --card-bg-color-dark: #111827;
 
     --accent-color: #FD0;
 
@@ -30,8 +32,8 @@
 }
 
 body {
-    background-color: #0b0f19; /* Fondo oscuro gamer */
-    color: #e2e8f0;
+    background-color: var(--bg-color); /* Fondo oscuro gamer */
+    color: var(--text-color-bright);
     font-family: var(--title-font); /* Texto base super moderno */
     font-size: 15px;
     line-height: 1.6;
@@ -49,7 +51,7 @@ a {
 
 .bold{
     font-weight: bold;
-    color: #e2e8f0;
+    color: var(--text-color-bright);
 }
 
 .card-text
@@ -83,7 +85,7 @@ a {
 .game-element
 {
     font-size: 12px;
-    color: #9ca3af;
+    color: var(--paragraph-color);
     text-align: center;
     padding: 0.5rem;
 }
@@ -102,18 +104,18 @@ a {
 
 .primer-bloque
 {
-    background: linear-gradient(135deg, #1e1b4b 0%, #111827 100%);
+    background: linear-gradient(135deg, var(--card-bg-color) 0%, var(--card-bg-color-dark) 100%);
     padding: 2.5rem;
     border-radius: 12px;
     margin-bottom: 2rem;
-    border: 1px solid #312e81;
+    border: 1px solid var(--border-color-dark);
 }
 
 .primer-bloque h1, h2
 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--header-font);
     font-weight: 800;
-    color: #ffffff;
+    color: var(--text-color-bright);
     margin-bottom: 1rem;
     letter-spacing: 1px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
@@ -132,8 +134,8 @@ video
 .conclusion-card
 {
     background-color: var(--bg-color-dark); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to top, var(--card-bg-color), var(--card-bg-color-dark));
-    border: 1px solid #1f2937;
+    background-image: linear-gradient(to top, var(--card-bg-color), var(--card-bg-color-dark) 50%);
+    border: 1px solid var(--border-color-dark);
     border-radius: 12px;
     padding: 1.5rem;
     display: flex;
@@ -160,8 +162,8 @@ video
    2. CABECERA (HEADER)
    ========================================================================== */
 .main-header {
-    background-color: #63759c;
-    border-bottom: 2px solid #1f2937;
+    background-color: var(--card-bg-color);
+    border-bottom: 2px solid var(--border-color-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,10 +201,10 @@ video
 /* Menú Lateral */
 .sidebar-categories {
     flex: 0 0 250px;
-    background-color: #111827;
+    background-color: var(--card-bg-color-dark);
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #1f2937;
+    border: 1px solid var(--border-color-dark);
     height: fit-content;
 }
 
@@ -210,7 +212,7 @@ video
     font-family: 'Orbitron', sans-serif;
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    color: #4facfe;
+    color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -227,14 +229,14 @@ video
     display: block;
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
-    color: #9ca3af;
+    color: var(--link-color);
     font-weight: 500;
 }
 
 .sidebar-categories a:hover, .sidebar-categories a.active-cat {
-    background-color: #1f2937;
-    color: #ffffff;
-    border-left: 4px solid #00f2fe;
+    background-color: var(--bg-color);
+    color: var(--link-highlight-color);
+    border-left: 4px solid var(--border-color-dark);
     padding-left: 0.6rem;
 }
 
@@ -253,8 +255,9 @@ video
 }
 
 .audio-card {
-    background-color: #111827;
-    border: 1px solid #1f2937;
+    background-color: var(--card-bg-color-dark);
+    background-image: linear-gradient(to right, var(--card-bg-color-dark), var(--card-bg-color));
+    border: 1px solid var(--border-color-dark);
     border-radius: 12px;
     padding: 1.5rem;
     display: flex;
@@ -262,12 +265,6 @@ video
     justify-content: space-between;
     transition: transform 0.3s ease, border-color 0.3s ease;
     margin: 2rem 0px;
-}
-
-.audio-card:hover {
-    transform: translateY(-5px);
-    border-color: #00f2fe;
-    box-shadow: 0 5px 15px rgba(0, 242, 254, 0.1);
 }
 
 .card-header {
@@ -281,12 +278,12 @@ video
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: var(--text-color-bright);
 }
 
 .card-description {
     font-size: 0.9rem;
-    color: #9ca3af;
+    color: var(--paragraph-color);
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
@@ -305,13 +302,13 @@ video
    6. PIE DE PÁGINA (FOOTER)
    ========================================================================== */
 .main-footer {
-    background-color: #090d16;
-    border-top: 1px solid #1f2937;
+    background-color: var(--bg-color-dark);
+    border-top: 1px solid var(--border-color-dark);
     text-align: center;
     padding: 1.5rem;
     margin-top: 4rem;
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--paragraph-color);
 }
 
 /* ==========================================================================

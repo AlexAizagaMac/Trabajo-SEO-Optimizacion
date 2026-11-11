@@ -58,11 +58,6 @@ strong{
     padding: 1.5rem;
 }
 
-.audio-card h2
-{
-    font-size: 24px;
-}
-
 .hidden-img
 {
     display: none;
@@ -213,7 +208,7 @@ video
 }
 
 .sidebar-categories h2 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--header-font);
     font-size: 1.1rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
@@ -252,11 +247,6 @@ video
 /* ==========================================================================
    5. TARJETAS DE AUDIO (CSS GRID)
    ========================================================================== */
-.audio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
 
 .audio-card {
     background-color: var(--card-bg-color-dark);
@@ -271,18 +261,11 @@ video
     margin: 2rem 0px;
 }
 
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.8rem;
-}
 
-.card-header h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--text-color-bright);
+.audio-card h3
+{
+    font-size: 24px;
+    font-family: var(--title-font);
 }
 
 .card-description {
@@ -352,9 +335,5 @@ video
     .main-header {
         flex-direction: column;
         gap: 1rem;
-    }
-    
-    .nav-menu a {
-        margin: 0 0.5rem;
     }
 }

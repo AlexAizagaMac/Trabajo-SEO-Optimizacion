@@ -1,0 +1,16 @@
+Principal
+Bandas Sonoras de Juegos Metroidvania | Estable | 45 | Informativa
+
+Short-Tail
+Metroidvania | Estable | 31 | Informativa
+Hollow Knight | Caída | 40 | Navegacional
+Animal Well | Estable | 37 | Navegacional
+Hollow Knight: Silksong | Caida | 35 | Navegacional
+Tunic | Estable | 24 | Navegacional
+Guacamelee! 2 | Estable | 30 | Navegacional
+
+Long-Tail
+Música Emotiva | Alza | 32 | Informativa
+Música Ambiental | Alza | 35 | Informativa
+Acústica Ambiental | Alza | 17 | Informativa
+La Música en los Juegos | Alza | 35 | Informativa
